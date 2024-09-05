@@ -78,7 +78,7 @@ pipeline {
             emailext subject: "Jenkins Pipeline: SUCCESS",
                 body: "The Jenkins pipeline completed successfully. ${STAGE_NAME}",
                 attachLog: true,
-                to: 'sashenhasindu@gmail.com'
+                to: 'sashenjayathilaka95@gmail.com'
         }
 
         failure {
@@ -86,7 +86,7 @@ pipeline {
             emailext subject: "Jenkins Pipeline: FAILURE",
                 body: "The Jenkins pipeline failed during the ${STAGE_NAME} stage. Check the logs for more details.",
                 attachLog: true,
-                to: 'sashenhasindu@gmail.com'
+                to: 'sashenjayathilaka95@gmail.com'
         }
     }
 }
